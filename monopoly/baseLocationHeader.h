@@ -24,6 +24,7 @@ public:
 		propertyOwned = false, ownerName = " ", basePrice = 0, numHotels = 0,
 			baseRent = 0, houseCost = 0;
 	};
+	//Setters + Getters
 	string getTileName() { return tileName; }
 	string getLocationName() { return tileLocation; }
 	int getBasePrice() { return basePrice; }
@@ -33,6 +34,11 @@ public:
 	string getOwnerName() { return ownerName; }
 	bool getIfOwned() {return propertyOwned;}
 
+	void setLocationName(string tName) { tileName = tName; }
+	void setBasePrice(int bPrice) { basePrice = bPrice; }
+	void setRent(int tRent) { baseRent = tRent; }
+	void setHouseCost(int tCost) { houseCost = tCost; }
+	void setOwner(string tOwner) {ownerName = tOwner;}
 
 
 };
